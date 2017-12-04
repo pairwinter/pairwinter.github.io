@@ -17,7 +17,7 @@
       "userId": null,
       "individualAccountId": null,
       "organizationId": 453003085615585,
-      "seq": null,
+      "seq": 0,
       "ssoIdentity": null,
       "registedType": "null"
     },
@@ -36,7 +36,7 @@
       "userId": null,
       "individualAccountId": null,
       "organizationId": 453003085615585,
-      "seq": null,
+      "seq": 1,
       "ssoIdentity": null,
       "registedType": "null"
     },
@@ -55,7 +55,7 @@
       "userId": null,
       "individualAccountId": null,
       "organizationId": 453003085615585,
-      "seq": null,
+      "seq": 2,
       "ssoIdentity": null,
       "registedType": "null"
     },
@@ -74,7 +74,7 @@
       "userId": null,
       "individualAccountId": null,
       "organizationId": 453003085615585,
-      "seq": null,
+      "seq": 3,
       "ssoIdentity": null,
       "registedType": "null"
     },
@@ -93,7 +93,7 @@
       "userId": null,
       "individualAccountId": null,
       "organizationId": 453003085615585,
-      "seq": null,
+      "seq": 4,
       "ssoIdentity": null,
       "registedType": "null"
     },
@@ -112,7 +112,7 @@
       "userId": null,
       "individualAccountId": null,
       "organizationId": 453003085615585,
-      "seq": null,
+      "seq": 5,
       "ssoIdentity": null,
       "registedType": "null"
     },
@@ -131,7 +131,7 @@
       "userId": null,
       "individualAccountId": null,
       "organizationId": 453003085615585,
-      "seq": null,
+      "seq": 6,
       "ssoIdentity": null,
       "registedType": "null"
     },
@@ -150,7 +150,7 @@
       "userId": null,
       "individualAccountId": null,
       "organizationId": 453003085615585,
-      "seq": null,
+      "seq": 7,
       "ssoIdentity": null,
       "registedType": "null"
     },
@@ -169,7 +169,7 @@
       "userId": null,
       "individualAccountId": null,
       "organizationId": 453003085615585,
-      "seq": null,
+      "seq": 8,
       "ssoIdentity": null,
       "registedType": "null"
     },
@@ -188,7 +188,7 @@
       "userId": null,
       "individualAccountId": null,
       "organizationId": 453003085615585,
-      "seq": null,
+      "seq": 9,
       "ssoIdentity": null,
       "registedType": "null"
     }
