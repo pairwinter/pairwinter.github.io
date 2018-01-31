@@ -3,15 +3,62 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <title>Demo App</title>
-    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/styles.css"/>
-    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/jscss/eb_validation.css">
-    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/notification/notification.css">
-    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/contacts/contacts.css">
-    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/jscss/jquery-ui-1.8.21.custom.css">
-    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/jscss/jquery-ui-1.8.21.everbridge.css">
-    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/jscss/ui.jqgrid.css">
-    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/jscss/ui.jqgrid.everbridge.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script type="application/javascript">
+      function oldTheme() {
+        document.write('<link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/styles.css"/>\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/styles.css">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/jscss/eb_validation.css">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/notification/notification.css">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/contacts/contacts.css">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/jscss/jquery-ui-1.8.21.custom.css">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/jscss/jquery-ui-1.8.21.everbridge.css">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/jscss/ui.jqgrid.css">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-dev2.everbridge.net/statics/stylesheets/jscss/ui.jqgrid.everbridge.css">')
+      }
+      function newTheme() {
+        document.write('<link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/jquery-ui-1.8.21.custom.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/jquery-ui-1.8.21.everbridge.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/eb_validation.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/layout-default-latest.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/ui.jqgrid.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/ui.jqgrid.everbridge.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/zTreeStyle.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/openlayer-original-style.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/jquery-ui-timepicker-addon.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/miniTip/miniTip.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/dashboard/dashboard.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/universe/universe.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/mediaelement/mediaelementplayer.min.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/notification/notification.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/contacts/contacts.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/report/report.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/settings/settings.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/myprofile/myprofile.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/usermanagement/usermanagement.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/role/role.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/incidents/incidents.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="/statics/javascripts/plugin/colorpicker/css/jquery.colorpicker.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="/statics/javascripts/plugin/fullcalendar/fullcalendar.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/scheduling/scheduling.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/scheduling/calendar-component.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/styles.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/jquerymultiselect/jquery.multiselect.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/jscss/jqueryintltelinput/css/intlTelInput.css?version=8.2.0.1015">\n' +
+          '    <link rel="stylesheet" type="text/css" href="https://manager-qa1.everbridge.net/statics/stylesheets-new/components/css/styles.css?version=8.2.0.1015">')
+      }
+      Cookies.get('theme')==='newTheme' ? newTheme() : oldTheme()
+    </script>
+    <script type="application/javascript">
+        var clickDefaultTheme = function(){
+          Cookies.set('theme', 'default');
+          window.location.reload();
+        }
+        var clickNewTheme = function(){
+          Cookies.set('theme', 'newTheme');
+          window.location.reload();
+        }
+    </script>
 </head>
 <body>
 <style>
@@ -34,6 +81,10 @@
     <li><a href="single-select.html">single-select</a></li>
     <li><a href="multi-select.html">multi-select</a></li>
     <li><a href="server-side.html">server-side</a></li>
+    <li>
+        <button type="button" class="button gray" onclick="clickDefaultTheme()">Default Theme</button>
+        <button type="button" class="button gray" onclick="clickNewTheme()">New Theme</button>
+    </li>
 </ul>
 <div id='root' style="padding: 4em;"></div>
 <div id='root1' style="padding: 4em;"></div>
